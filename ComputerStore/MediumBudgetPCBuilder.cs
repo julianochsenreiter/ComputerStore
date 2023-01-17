@@ -12,32 +12,32 @@ namespace ComputerStore
         {
         }
 
-        public override void AddCase()
+        public override PCBuilder AddCase()
         {
             throw new NotImplementedException();
         }
 
-        public override void AddCPU()
+        public override PCBuilder AddCPU()
         {
             throw new NotImplementedException();
         }
 
-        public override void AddDisks()
+        public override PCBuilder AddDisks()
         {
             throw new NotImplementedException();
         }
 
-        public override void AddGraphicsCard()
+        public override PCBuilder AddGraphicsCard()
         {
             throw new NotImplementedException();
         }
 
-        public override void AddRAM()
+        public override PCBuilder AddRAM()
         {
             throw new NotImplementedException();
         }
 
-        public override void SetPrice()
+        public override PCBuilder SetPrice()
         {
             throw new NotImplementedException();
         }

@@ -9,15 +9,14 @@ namespace ComputerStore
 
         protected override PC BuildPC(int budgetChoice, bool optimizePerformance)
         {
-            PCBuilder builder = PCBuilderFactory.CreateBuilder(budgetChoice, optimizePerformance);
-
-            builder.AddCase();
-            builder.AddCPU();
-            builder.AddRAM();
-            builder.AddDisks();
-            builder.AddGraphicsCard();
-            builder.SetPrice();
-            return builder.Build();
+            return PCBuilderFactory.CreateBuilder(budgetChoice, optimizePerformance)
+                .AddCase()
+                .AddCPU()
+                .AddRAM()
+                .AddDisks()
+                .AddGraphicsCard()
+                .SetPrice()
+                .Build();
         }
     }
 }

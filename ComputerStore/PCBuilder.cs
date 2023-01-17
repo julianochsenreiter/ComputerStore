@@ -16,12 +16,12 @@ public abstract class PCBuilder
         this.optimizePerformance = optimizePerformance;
         disks = new List<Harddisk>();
     }
-    public abstract void AddCase();
-    public abstract void AddCPU();
-    public abstract void AddRAM();
-    public abstract void AddDisks();
-    public abstract void AddGraphicsCard();
-    public abstract void SetPrice();
+    public abstract PCBuilder AddCase();
+    public abstract PCBuilder AddCPU();
+    public abstract PCBuilder AddRAM();
+    public abstract PCBuilder AddDisks();
+    public abstract PCBuilder AddGraphicsCard();
+    public abstract PCBuilder SetPrice();
     public PC Build()
     {
         if (@case == null || cpu == null || ram == null || disks.Count == 0 || graphicsCard == null)

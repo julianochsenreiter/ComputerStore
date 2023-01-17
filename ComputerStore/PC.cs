@@ -26,11 +26,11 @@ namespace ComputerStore
 
         public override string ToString()
         {
-            StringBuilder builder = new StringBuilder();
-            builder.AppendLine(Case.ToString());
-            builder.AppendLine(Processor.ToString());
-            builder.AppendLine(RAM.ToString());
-            builder.AppendLine("Disks");
+            StringBuilder builder = new StringBuilder()
+            .AppendLine(Case.ToString())
+            .AppendLine(Processor.ToString())
+            .AppendLine(RAM.ToString())
+            .AppendLine("Disks");
 
             foreach (var disk in Disks)
             {

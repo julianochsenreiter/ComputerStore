@@ -12,7 +12,7 @@ namespace ComputerStore
         {
 
         }
-        public override void AddCase()
+        public override PCBuilder AddCase()
         {
             if (optimizePerformance)
             {
@@ -22,9 +22,10 @@ namespace ComputerStore
             {
                 @case = new ComputerCase("Slim Desktop S01-aF0101ng Jet Black", "HP", "Slim Desktop");
             }
+            return this;
         }
 
-        public override void AddCPU()
+        public override PCBuilder AddCPU()
         {
             if (optimizePerformance)
             {
@@ -34,9 +35,10 @@ namespace ComputerStore
             {
                 cpu = new CPU("Athlon Gold 3150U, 2C/4T, 2.40-3.30GHz", "AMD", cores: 2);
             }
+            return this;
         }
 
-        public override void AddDisks()
+        public override PCBuilder AddDisks()
         {
             if (optimizePerformance)
             {
@@ -46,9 +48,10 @@ namespace ComputerStore
             {
                 disks.Add(new Harddisk("SSD 256 GB", "Toshiba", ssd: true));
             }
+            return this;
         }
 
-        public override void AddGraphicsCard()
+        public override PCBuilder AddGraphicsCard()
         {
             if (optimizePerformance)
             {
@@ -58,9 +61,10 @@ namespace ComputerStore
             {
                 graphicsCard = new GraphicsCard("Radeon Graphics (iGPU)", "AMD", integrated: true);
             }
+            return this;
         }
 
-        public override void AddRAM()
+        public override PCBuilder AddRAM()
         {
             if (optimizePerformance)
             {
@@ -70,9 +74,10 @@ namespace ComputerStore
             {
                 ram = new MainMemory("8GB DDR4", "Noname");
             }
+            return this;
         }
 
-        public override void SetPrice()
+        public override PCBuilder SetPrice()
         {
             if (optimizePerformance)
             {
@@ -82,6 +87,7 @@ namespace ComputerStore
             {
                 price = 301.51m;
             }
+            return this;
         }
     }
 }
