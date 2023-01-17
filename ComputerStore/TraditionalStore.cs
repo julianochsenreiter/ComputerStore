@@ -7,7 +7,7 @@
 //        // Typically you will find many more methods here since a computer store
 //        // has many other things it can do!
 
-//        protected override PC BuildPC(int budgetChoice, bool optimizePerformance)
+//        public override PC BuildPC(int budgetChoice, bool optimizePerformance)
 //        {
 //            if (budgetChoice == 1)
 //            {

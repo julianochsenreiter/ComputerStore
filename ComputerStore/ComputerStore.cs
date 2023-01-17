@@ -2,7 +2,7 @@
 
 namespace ComputerStore
 {
-    internal abstract class ComputerStore
+    public abstract class ComputerStore
     {
         public PC BuyPC()
         {
@@ -23,6 +23,6 @@ namespace ComputerStore
             return BuildPC(budgetChoice, optimization == 1 ? true : false);
         }
 
-        protected abstract PC BuildPC(int budgetChoice, bool optimizePerformance);
+        public abstract PC BuildPC(int budgetChoice, bool optimizePerformance);
     }
 }

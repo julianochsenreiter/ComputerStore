@@ -2,12 +2,12 @@
 
 namespace ComputerStore
 {
-    internal class BuilderStore : ComputerStore
+    public class BuilderStore : ComputerStore
     {
         // Typically you will find many more methods here since a computer store
         // has many other things it can do!
 
-        protected override PC BuildPC(int budgetChoice, bool optimizePerformance)
+        public override PC BuildPC(int budgetChoice, bool optimizePerformance)
         {
             return PCBuilderFactory.CreateBuilder(budgetChoice, optimizePerformance)
                 .AddCase()
